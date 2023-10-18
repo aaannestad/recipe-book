@@ -1,0 +1,58 @@
+---
+- name: Basic daal
+  course: Main (protein)
+  servings: 3 (2 of rice, one of only daal)
+  steps:
+    - ingredients:
+      - item: dry rice
+        qty: 1
+        unit: cup
+      tools:
+        - rice cooker
+      desc: Prepare one cup of rice as normal. Turn on the rice cooker a bit before you start the rest of the process; the rice will take longer than the daal to cook. 
+    - ingredients:
+      - item: red lentils
+        qty: 1
+        unit: cup
+      tools:
+      - strainer
+      desc: Rinse and strain one cup of lentils.
+    - ingredients:
+      - item: water
+        qty: 3
+        unit: cup
+      - item: turmeric
+        qty: 1
+        unit: tsp
+      - item: salt
+        qty: 1
+        unit: tsp
+      tools:
+        - 4qt pot
+      desc: Put the lentils, water, salt and turmeric into a pot; mix well and bring to a boil.
+    - desc: When the water boils, turn down the heat to medium and let boil for 7 minutes.
+    - desc: After 7 minutes, remove the pot from the heat, place a lid on, and let it sit for another 5 minutes. In the meantime---
+    - ingredients:
+      - item: ghee
+        qty: 1
+        unit: tsp
+      tools:
+        - small pan
+      desc: Put a small amount of ghee in a small pan and melt it on the stove.
+    - ingredients:
+      - item: cumin seeds
+        qty: 1
+        unit: tbsp
+      desc: When the pan is well hot, pour in the cumin seeds, stir quickly, and once the seeds start to pop (nearly immediately) remove the pan from the heat.
+    - desc: When the 5 minutes for the lentils are up, pour in the cumin seeds and ghee.
+    - ingredients:
+      - item: lime
+        qty: 1
+        unit: item
+      tools:
+        - knife
+        - cutting board
+      desc: Cut the lime into quarters, and squeeze the juice into the daal mix.
+    - desc: Mix well and serve.
+
+
