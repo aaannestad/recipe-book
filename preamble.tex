@@ -1,0 +1,12 @@
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fontspec}
+\setmainfont[Numbers=OldStyle]{Junicode}
+
+\newcounter{steps}
+
+\newenvironment{recipe}[2]{% provide name and portions
+	{\LARGE #1} \hskip #2 portions\\
+	\hline
+	\setcounter{steps}{1}
+}{enddef}
