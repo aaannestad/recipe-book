@@ -3,10 +3,44 @@
 \usepackage{fontspec}
 \setmainfont[Numbers=OldStyle]{Junicode}
 
+\newfontface{\num}[Numbers=Uppercase]{Junicode}
+
+\usepackage{nicefrac}
+
 \newcounter{steps}
 
 \newenvironment{recipe}[2]{% provide name and portions
-	{\LARGE #1} \hskip #2 portions\\
-	\hline
+	{\LARGE #1} \hspace{\fill} #2 portions
+	\hrule
 	\setcounter{steps}{1}
-}{enddef}
+	\vspace{12pt}
+}{}
+
+\newenvironment{step}[0]{%
+	\vspace{\parskip}\noindent\hspace{2em}
+	\begin{minipage}{\linewidth}
+		\begin{minipage}[t]{.1\linewidth}
+			\arabic{steps}
+		\end{minipage}
+}{%
+\addtocounter{steps}{1}\end{minipage}%
+}
+
+\newenvironment{ingrs}[0]{%
+	\begin{minipage}[t]{.3\linewidth}%
+		\num%
+		\setlength{\tabcolsep}{2pt}
+		\begin{tabular}[t]{r l@{\hspace{2em}} l}
+}{%
+		\end{tabular}%
+	\end{minipage}%
+}
+
+\newcommand{\ingr}[3]{#1 & #2 & #3 \\}
+\newcommand{\tool}[1]{\multicolumn{3}{l}{#1}\\}
+
+\newenvironment{stepdesc}[0]{%
+	\begin{minipage}[t]{.5\linewidth}
+}{%
+	\end{minipage}
+}
