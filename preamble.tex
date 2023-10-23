@@ -24,6 +24,7 @@
 		\end{minipage}
 }{%
 \addtocounter{steps}{1}\end{minipage}%
+\vspace{6pt}%
 }
 
 \newenvironment{ingrs}[0]{%
@@ -37,6 +38,7 @@
 }
 
 \newcommand{\ingr}[3]{#1 & #2 & #3 \\}
+\newcommand{\itemingr}[2]{#1 & \multicolumn{2}{l}{#2}\\}
 \newcommand{\tool}[1]{\multicolumn{3}{l}{#1}\\}
 
 \newenvironment{stepdesc}[0]{%

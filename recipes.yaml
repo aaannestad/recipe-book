@@ -41,7 +41,7 @@
       desc: Put a small amount of ghee in a small pan and melt it on the stove.
     - ingredients:
       - item: cumin seeds
-        qty: 0.5
+        qty: 1
         unit: tbsp
       desc: When the pan is well hot, pour in the cumin seeds, stir quickly, and once the seeds start to pop (nearly immediately) remove the pan from the heat.
     - desc: When the 5 minutes for the lentils are up, pour in the cumin seeds and ghee.
@@ -52,7 +52,7 @@
       tools:
         - knife
         - cutting board
-      desc: Cut the lime into quarters, and squeeze the juice into the daal mix.
-    - desc: Mix well and serve.
+      desc: Cut the lime into quarters, and squeeze the juice into the daal mix. Mix well.
+    - desc: Serve on or alongside the rice.
 
 

@@ -41,29 +41,32 @@ def printrecipes(db):
         for step in recipe['steps']:
             indentnum+=1
             writeline(texbegin('step'), indentnum)
-            if 'ingredients' in step or 'tools' in step:
-                indentnum+=1
-                writeline(texbegin('ingrs'), indentnum)
-                indentnum+=1
-                if 'ingredients' in step: 
+            indentnum+=1
+            writeline(texbegin('ingrs'), indentnum)
+            indentnum+=1
+            if 'ingredients' in step: 
 
-                    for ingredient in step['ingredients']:
-                        unit = ingredient['unit']
-                        item = ingredient['item']
-                        if type(ingredient['qty']) is int:
-                            quant = str(ingredient['qty'])
-                        elif type(ingredient['qty']) is float:
-                            quantratio = ingredient['qty'].as_integer_ratio()
-                            quant = r'\nicefrac{'+str(quantratio[0])+'}{'+str(quantratio[1])+'}'
+                for ingredient in step['ingredients']:
+                    unit = ingredient['unit']
+                    item = ingredient['item']
+                    if type(ingredient['qty']) is int:
+                        quant = str(ingredient['qty'])
+                    elif type(ingredient['qty']) is float:
+                        quantratio = ingredient['qty'].as_integer_ratio()
+                        quant = r'\nicefrac{'+str(quantratio[0])+'}{'+str(quantratio[1])+'}'
+                    if ingredient['unit'] == 'item':
+                        writeline(r'\itemingr{'+quant+'}{'+item+'}', indentnum)
+                    else:
                         writeline(r'\ingr{'+quant+'}{'+unit+'}{'+item+'}', indentnum)
 
-                if 'tools' in step:
-                    for tool in step['tools']:
-                        writeline(r'\tool{'+tool+'}', indentnum)
 
-                indentnum-=1
-                writeline(texend('ingrs'), indentnum)
-                indentnum-=1
+            if 'tools' in step:
+                for tool in step['tools']:
+                    writeline(r'\tool{'+tool+'}', indentnum)
+
+            indentnum-=1
+            writeline(texend('ingrs'), indentnum)
+            indentnum-=1
 
             indentnum+=1
             desc = step['desc']
