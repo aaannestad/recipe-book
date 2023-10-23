@@ -24,6 +24,10 @@ def texbegin(cmd):
 def texend(cmd):
     return r'\end{'+cmd+'}'
 
+#TODO: Sort recipes by category
+
+#do the things
+
 def printrecipes(db):
     indentnum = 0
 
@@ -80,8 +84,8 @@ def printrecipes(db):
             writeline(texend('step'), indentnum)
             indentnum-=1
 
-    writeline(texend('recipe'), 1) 
-    indentnum-=1
+        writeline(texend('recipe'), 1) 
+        indentnum-=1
 
 with open('recipes.tex', 'w') as output:
     output.write(preamble)

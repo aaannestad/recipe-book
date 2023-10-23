@@ -1,10 +1,14 @@
 ---
 - name: Basic daal
-  course: Main (protein)
+  course: main
   servings: 3
+  source: TODO a webpage
   steps:
     - ingredients:
       - item: dry rice
+        qty: 1
+        unit: cup
+      - item: water
         qty: 1
         unit: cup
       tools:
@@ -29,7 +33,7 @@
         unit: tsp
       tools:
         - 4qt pot
-      desc: Put the lentils, water, salt and turmeric into a pot; mix well and bring to a boil.
+      desc: Put the l:entils, water, salt and turmeric into a pot; mix well and bring to a boil.
     - desc: When the water boils, turn down the heat to medium and let boil for 7 minutes.
     - desc: After 7 minutes, remove the pot from the heat, place a lid on, and let it sit for another 5 minutes. In the meantime---
     - ingredients:
@@ -55,4 +59,48 @@
       desc: Cut the lime into quarters, and squeeze the juice into the daal mix. Mix well.
     - desc: Serve on or alongside the rice.
 
-
+- name: Basic sourdough bread
+  course: ingredient
+  servings: 10
+  source: https://www.kingarthurbaking.com/recipes/no-knead-sourdough-bread-recipe
+  steps:
+    - ingredients:
+      - item: flour
+        qty: 65
+        unit: g
+      - item: water
+        qty: 65
+        unit: g
+      desc: Take your starter out of the fridge, remove about 125g and store in a jar for other things, and feed the starter with about 65g of flour and 65g of water.
+    - desc: Leave the starter on the counter to warm up and activate for 4--6 hours.
+    - ingredients:
+      - item: starter
+        qty: 125
+        unit: g
+      - item: flour
+        qty: 330
+        unit: g
+      - item: water
+        qty: 220
+        unit: g
+      - item: salt
+        qty: 10
+        unit: g
+      tools:
+      - mixing bowl
+      desc: In a bowl, put together 125g of starter, 330g of flour, 220g of water, and 10g of salt.
+    - desc: Mix gently, switching to kneading at the end as necessary to mix. Don't knead any more than you have to.
+    - tools:
+      - cloth or wax wrap
+      desc: Cover the bowl and let it sit on the counter for an hour.
+    - desc: After an hour, remove the cover, gently fold the dough over on itself a few times, turning a bit as you go. Put the cover back on and let it sit another hour.
+    - desc: Fold the dough again, then let it rest one more hour.
+    - desc: Fold the dough one last time, then put the dough in the refrigerator for 12--48 hours.
+    - tools:
+      - dutch oven
+      - silicone liner or parchment paper
+      desc: When you have about four hours to rise and bake, take the dough out of the fridge, punch it down, pick it up and shape it in your hands into a ball, and set it down in a lined dutch oven. Let it rest and warm up on the counter with the lid on for three hours.
+    - desc: After three hours, preheat your oven to 500 degrees F.
+    - desc: When the oven is hot enough, score the top of your dough in an X with a knife, then put the lid back on and put it in the oven. Immediately reduce the oven temperature to 450 degrees, and set a timer for 45 minutes.
+    - desc: After 45 minutes, open the oven, remove the lid on the dutch oven, and close the oven back up again. Let it bake another 15 minutes.
+    - desc: After 15 minutes, the bread is done! Take it out of the oven and the dutch oven, and put it on a cooling rack to cool completely before serving or storing it.
