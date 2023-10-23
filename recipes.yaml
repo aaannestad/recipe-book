@@ -2,7 +2,7 @@
 - name: Basic daal
   course: main
   servings: 3
-  source: TODO a webpage
+  source: today.com/recipes/most-basic-dal-recipe-t154897
   steps:
     - ingredients:
       - item: dry rice
@@ -24,22 +24,25 @@
     - ingredients:
       - item: water
         qty: 3
-        unit: cup
+        unit: cups
       - item: turmeric
         qty: 1
         unit: tsp
       - item: salt
         qty: 1
         unit: tsp
+      - item: chilli powder (optional)
+        qty: 1
+        unit: pinch
       tools:
-        - 4qt pot
-      desc: Put the l:entils, water, salt and turmeric into a pot; mix well and bring to a boil.
+        - four-quart pot
+      desc: Put the lentils, water, salt and turmeric into a pot; mix well and bring to a boil.
     - desc: When the water boils, turn down the heat to medium and let boil for 7 minutes.
     - desc: After 7 minutes, remove the pot from the heat, place a lid on, and let it sit for another 5 minutes. In the meantime---
     - ingredients:
       - item: ghee
         qty: 1
-        unit: tsp
+        unit: tbsp
       tools:
         - small pan
       desc: Put a small amount of ghee in a small pan and melt it on the stove.
@@ -53,9 +56,6 @@
       - item: lime
         qty: 1
         unit: item
-      tools:
-        - knife
-        - cutting board
       desc: Cut the lime into quarters, and squeeze the juice into the daal mix. Mix well.
     - desc: Serve on or alongside the rice.
 
@@ -93,6 +93,14 @@
     - tools:
       - cloth or wax wrap
       desc: Cover the bowl and let it sit on the counter for an hour.
+    - ingredients:
+      - item: flour
+        qty: 65
+        unit: g
+      - item: water
+        qty: 65
+        unit: g
+      desc: Re-feed your starter and put it back in the fridge.
     - desc: After an hour, remove the cover, gently fold the dough over on itself a few times, turning a bit as you go. Put the cover back on and let it sit another hour.
     - desc: Fold the dough again, then let it rest one more hour.
     - desc: Fold the dough one last time, then put the dough in the refrigerator for 12--48 hours.

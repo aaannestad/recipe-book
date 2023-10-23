@@ -10,11 +10,13 @@
 \newcounter{steps}
 
 \newenvironment{recipe}[2]{% provide name and portions
-	{\LARGE #1} \hspace{\fill} #2 portions
+	\noindent{\LARGE #1} \hspace{\fill} #2 portions
 	\hrule
 	\setcounter{steps}{1}
 	\vspace{12pt}
-}{}
+}{%
+	%PUT A VSPACE HERE *BEFORE* the next title somehow
+}
 
 \newenvironment{step}[0]{%
 	\vspace{\parskip}\noindent\hspace{2em}
