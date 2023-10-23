@@ -10,6 +10,15 @@ with open('recipes.yaml') as dbfile:
 
 # TeX commands
 
+preamble = r'''\documentclass{article}
+
+\input{preamble.tex}
+
+\begin{document}
+'''
+
+final = r'\end{document}'
+
 def texbegin(cmd):
     return r'\begin{'+cmd+'}'
 def texend(cmd):
@@ -19,7 +28,7 @@ def printrecipes(db):
     indentnum = 0
 
     def writeline(text,indentnum):
-        print(('  '*indentnum)+text)
+        output.write(('  '*indentnum)+text+'\n')
 
     for recipe in db:
         rname = recipe['name']
@@ -32,18 +41,38 @@ def printrecipes(db):
         for step in recipe['steps']:
             indentnum+=1
             writeline(texbegin('step'), indentnum)
-            if 'ingredients' in step: 
+            if 'ingredients' in step or 'tools' in step:
                 indentnum+=1
                 writeline(texbegin('ingrs'), indentnum)
-                for ingredient in step['ingredients']:
-                    indentnum+=1
-                    if type(ingredient['qty']) is int:
-                        writeline(r'\ingr{', indentnum) #TODO: actual TEX
-                    elif type(ingredient['qty']) is float:
-                        print(ingredient['qty'].as_integer_ratio()) #TODO; actual TEX
-                    indentnum-=1
+                indentnum+=1
+                if 'ingredients' in step: 
+
+                    for ingredient in step['ingredients']:
+                        unit = ingredient['unit']
+                        item = ingredient['item']
+                        if type(ingredient['qty']) is int:
+                            quant = str(ingredient['qty'])
+                        elif type(ingredient['qty']) is float:
+                            quantratio = ingredient['qty'].as_integer_ratio()
+                            quant = r'\nicefrac{'+str(quantratio[0])+'}{'+str(quantratio[1])+'}'
+                        writeline(r'\ingr{'+quant+'}{'+unit+'}{'+item+'}', indentnum)
+
+                if 'tools' in step:
+                    for tool in step['tools']:
+                        writeline(r'\tool{'+tool+'}', indentnum)
+
+                indentnum-=1
                 writeline(texend('ingrs'), indentnum)
                 indentnum-=1
+
+            indentnum+=1
+            desc = step['desc']
+            writeline(texbegin('stepdesc'),indentnum)
+            indentnum+=1
+            writeline(desc, indentnum)
+            indentnum-=1
+            writeline(texend('stepdesc'), indentnum)
+            indentnum-=1
 
             writeline(texend('step'), indentnum)
             indentnum-=1
@@ -51,4 +80,7 @@ def printrecipes(db):
     writeline(texend('recipe'), 1) 
     indentnum-=1
 
-printrecipes(dbload)
+with open('recipes.tex', 'w') as output:
+    output.write(preamble)
+    printrecipes(dbload)
+    output.write(final)
