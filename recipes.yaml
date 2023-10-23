@@ -1,7 +1,7 @@
 ---
 - name: Basic daal
   course: Main (protein)
-  servings: 3 (2 of rice, one of only daal)
+  servings: 3
   steps:
     - ingredients:
       - item: dry rice
@@ -41,7 +41,7 @@
       desc: Put a small amount of ghee in a small pan and melt it on the stove.
     - ingredients:
       - item: cumin seeds
-        qty: 1
+        qty: 0.5
         unit: tbsp
       desc: When the pan is well hot, pour in the cumin seeds, stir quickly, and once the seeds start to pop (nearly immediately) remove the pan from the heat.
     - desc: When the 5 minutes for the lentils are up, pour in the cumin seeds and ghee.
