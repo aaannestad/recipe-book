@@ -2,7 +2,9 @@
 - name: Basic daal
   course: main
   servings: 3
-  source: today.com/recipes/most-basic-dal-recipe-t154897
+  source:
+    cont: today.com/recipes/most-basic-dal-recipe-t154897
+    type: url
   steps:
     - ingredients:
       - item: dry rice
@@ -62,7 +64,9 @@
 - name: Basic sourdough bread
   course: ingredient
   servings: 10
-  source: https://www.kingarthurbaking.com/recipes/no-knead-sourdough-bread-recipe
+  source:
+    cont: kingarthurbaking.com/recipes/no-knead-sourdough-bread-recipe
+    type: url
   steps:
     - ingredients:
       - item: flour

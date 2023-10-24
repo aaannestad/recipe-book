@@ -4,36 +4,33 @@
 \setmainfont[Numbers=OldStyle]{Junicode}
 
 \newfontface{\num}[Numbers=Uppercase]{Junicode}
+\newfontface{\url}{Ubuntu Mono}
 
 \usepackage{nicefrac}
 
-\newcounter{steps}
-
-\newenvironment{recipe}[2]{% provide name and portions
-	\noindent{\LARGE #1} \hspace{\fill} #2 portions
-	\hrule
-	\setcounter{steps}{1}
+\newenvironment{recipe}[3][]{% provide name and portions
+	\noindent{\LARGE #2} \hspace{\fill} #3 portions
+	\hrule \vspace{2pt}	\hspace{\fill} {\footnotesize #1}
 	\vspace{12pt}
+	
+	\noindent
 }{%
 	%PUT A VSPACE HERE *BEFORE* the next title somehow
 }
 
 \newenvironment{step}[0]{%
-	\vspace{\parskip}\noindent\hspace{2em}
+	\vspace{\parskip}\hspace{2em}\noindent
 	\begin{minipage}{\linewidth}
-		\begin{minipage}[t]{.1\linewidth}
-			\arabic{steps}
-		\end{minipage}
 }{%
-\addtocounter{steps}{1}\end{minipage}%
-\vspace{6pt}%
+\end{minipage}%
+\vspace{10pt}\noindent%
 }
 
 \newenvironment{ingrs}[0]{%
-	\begin{minipage}[t]{.3\linewidth}%
+	\begin{minipage}[t]{.4\linewidth}%
 		\num%
 		\setlength{\tabcolsep}{2pt}
-		\begin{tabular}[t]{r l@{\hspace{2em}} l}
+		\begin{tabular}[t]{r p{4em} l}%This is hardcoded, which sucks, but is possibly inevitable since I can't define a variable
 }{%
 		\end{tabular}%
 	\end{minipage}%

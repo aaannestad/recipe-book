@@ -39,8 +39,17 @@ def printrecipes(db):
         rserv = str(recipe['servings'])
         
         indentnum+=1
+        
+        if 'source' in recipe:
+            rsource = recipe['source']['cont']
+            rsourcetype = recipe['source']['type']
+            if rsourcetype == 'url':
+                writeline(texbegin('recipe')+r'[\url{'+rsource+'}]{'+rname+'}{'+rserv+'}', indentnum)
+            else:
+                writeline(texbegin('recipe')+r'['+rsource+']{'+rname+'}{'+rserv+'}', indentnum)
+        else:
+            writeline(texbegin('recipe')+'{'+rname+'}{'+rserv+'}', indentnum)
 
-        writeline(texbegin('recipe')+'{'+rname+'}{'+rserv+'}', indentnum)
 
         for step in recipe['steps']:
             indentnum+=1
