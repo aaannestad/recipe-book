@@ -66,7 +66,7 @@ def printrecipes(db):
                         quant = str(ingredient['qty'])
                     elif type(ingredient['qty']) is float:
                         quantratio = ingredient['qty'].as_integer_ratio()
-                        quant = r'\nicefrac{'+str(quantratio[0])+'}{'+str(quantratio[1])+'}'
+                        quant = r'\nf{'+str(quantratio[0])+'}{'+str(quantratio[1])+'}'
                     if ingredient['unit'] == 'item':
                         writeline(r'\itemingr{'+quant+'}{'+item+'}', indentnum)
                     else:

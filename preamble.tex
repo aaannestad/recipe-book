@@ -7,6 +7,7 @@
 \newfontface{\url}{Ubuntu Mono}
 
 \usepackage{nicefrac}
+\newcommand{\nf}[2]{\num{\nicefrac{#1}{#2}}}
 
 \newenvironment{recipe}[3][]{% provide name and portions
 	\noindent{\LARGE #2} \hspace{\fill} #3 portions
@@ -28,7 +29,6 @@
 
 \newenvironment{ingrs}[0]{%
 	\begin{minipage}[t]{.4\linewidth}%
-		\num%
 		\setlength{\tabcolsep}{2pt}
 		\begin{tabular}[t]{r p{4em} l}%This is hardcoded, which sucks, but is possibly inevitable since I can't define a variable
 }{%
