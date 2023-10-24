@@ -1,0 +1,9 @@
+Things to add to the process:
+
+- Sorting by tag
+- Better formatting
+- A way to handle waiting times a bit more visually clearly (e.g. a bar across the whole page)
+- Tags for concurrent processes? (Greek letters next to step numbers??)
+- TeX support for marking source URLs
+- Space for a description above the recipe
+- A total of all ingredients used at the top
