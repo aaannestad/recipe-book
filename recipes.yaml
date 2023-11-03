@@ -116,3 +116,95 @@
     - desc: When the oven is hot enough, score the top of your dough in an X with a knife, then put the lid back on and put it in the oven. Immediately reduce the oven temperature to 450 degrees, and set a timer for 45 minutes.
     - desc: After 45 minutes, open the oven, remove the lid on the dutch oven, and close the oven back up again. Let it bake another 15 minutes.
     - desc: After 15 minutes, the bread is done! Take it out of the oven and the dutch oven, and put it on a cooling rack to cool completely before serving or storing it.
+
+- name: Apple cider vinegar
+  course: ingredient
+  servings: many
+  source:
+    cont: https://growagoodlife.com/apple-scrap-vinegar/
+    type: url
+  steps:
+    - ingredients:
+      - item: apple scraps
+        qty: 12
+        unit: apples worth
+      tools:
+      - quart jar
+      desc: Put about 12 apples' worth of cores and other scraps in a quart jar; squishing them down as much as you can.
+    - ingredients:
+      - item: water
+        qty: 1
+        unit: cup
+      - item: sugar
+        qty: 2
+        unit: tbsp
+      - item: live vinegar (optional)
+        qty: 1
+        unit: tbsp
+      desc: Mix about a cup of water with 2 tbsp of sugar, then pour over the apple scraps. Add a tablespoon of vinegar from a previous batch or another live vinegar source if you want, for a bit faster maturation and somewhat lower chance of failure. Add water to fill up the rest of the jar, leaving a few inches of space at the top. You may need a fermentation weight or similar tool to keep the scraps all submerged.
+    - tools:
+      - coffee filter or paper towel
+      - rubber band or string or mason jar band
+      desc: Cover the jar with a breathable cover, and leave it to sit in a warm place out of sunlight. Wait a few days for it to start to visibly bubble.
+    - desc: Once it's visibly bubbling, stir it once a day to oxygenate the water until it stops bubbling---about two weeks or so.
+    - tools:
+      - mixing bowl or other receptacle
+      - cheesecloth or strainer bag
+      desc: Once the vinegar stops bubbling, strain the scraps out through a cloth into a bowl. Squeeze the scraps to liberate as much remaining liquid as you can. Discard the scraps.
+    - desc: Pour the vinegar back into the jar, cover with a breathable cover, and let it ferment without stirring for another two to four weeks, until it has the sourness you're looking for.
+    - desc: Once it tastes like you want it to, close it with a regular lid or put it into a more pourable bottle, and leave it in the fridge for up to a year.
+
+- name: Potato and squash stew
+  course: main
+  servings: 4
+  source:
+    cont: mychefsapron.com/one-hearty-vegetable-stew-recipe-vegan-gf/
+    type: url
+  steps:
+    - ingredients:
+      - item: oil
+        qty: 1
+        unit: tbsp
+      tools:
+        - four-quart pot or dutch oven
+      desc: Put a tablespoon of oil in a pot on the stove. Don't turn the stove on yet.
+    - ingredients:
+      - item: honeynut squash
+        qty: 1
+        unit: item
+      - item: potatoes
+        qty: 3
+        unit: item
+      - item: onion
+        qty: 1
+        unit: item
+      desc: Cut up three potatoes, a honeynut squash (or half a butternut squash), and an onion; put the chopped pieces in the pot as you go. The squash is easier to peel if you microwave it for 30 seconds beforehand. (There's no need to peel the potatoes.)
+    - ingredients:
+      - item: salt
+        qty: 1
+        unit: tsp
+      desc: Put a teaspoon of salt in with the vegetables, turn on the heat, and stir and cook for five minutes.
+    - ingredients:
+      - item: garlic
+        qty: 2
+        unit: cloves
+      desc: Near the end of the five minutes, chop up two cloves of garlic.
+    - desc: After five minutes, put the lid on and leave it to cook for another five minutes.
+    - ingredients:
+      - item: peanut milk
+        qty: 2
+        unit: cups
+      - item: turmeric
+        qty: 1
+        unit: tsp
+      - item: ground pepper
+        qty: 1
+        unit: tsp
+      desc: Open the pot, pour in the peanut milk, and stir in the garlic, turmeric, and pepper. Let it come to a simmer.
+    - desc: Once the stew is simmering, cover the pan and cook for ten minutes, or longer if the potatoes aren't yet soft.
+    - ingredients:
+      - item: nutritional yeast
+        qty: 3
+        unit: tbsp
+      desc: Once the potatoes are done through, mix in the nutritional yeast and let it cook for two further minutes.
+    - desc: After two minutes, remove it from the heat and serve.
